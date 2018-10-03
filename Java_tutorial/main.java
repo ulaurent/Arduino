@@ -24,6 +24,24 @@ public class Main {
             //System.out.println(i);
             System.out.println("result = "+i.getResults());
         }
+
+        System.out.println();
+        System.out.println("USING OVERLOADS");
+        System.out.println();
+
+        double leftDouble = 9.0d;
+        double rightDouble = 4.0d;
+        int leftInt = 9;
+        int rightInt = 4;
+
+
+        MathEquation equationOverload = new MathEquation('d');
+
+        equationOverload.execute(leftInt,rightInt);
+
+        System.out.println("results ==");
+        System.out.println(equationOverload.getOpCodes());
+        System.out.println(equationOverload.getResults());
     }
 
     // This function create takes in 3 args, and when called, you have to have 3 args, and it will set the args equal

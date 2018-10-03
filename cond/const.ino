@@ -17,3 +17,4 @@ void setup() {
 
   Serial.println(maxValue);
 }
+

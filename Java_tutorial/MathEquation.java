@@ -32,6 +32,25 @@ public class MathEquation {
         return results;
     }
 
+    /*Demonstration of overloading of constructors (same method name, different parameters)*/
+    public MathEquation (){}
+
+    public MathEquation(char opCodes){
+        this.opCodes =opCodes;
+    }
+
+    public MathEquation(char opCodes, double leftVals, double rightVals){
+        this(opCodes);
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+    }
+
+    public void execute (double leftVals, double rightVals){
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+
+        execute();
+    }
 
     public void execute(){
         if(opCodes == 'a'){
