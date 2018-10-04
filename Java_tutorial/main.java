@@ -42,6 +42,26 @@ public class Main {
         System.out.println("results ==");
         System.out.println(equationOverload.getOpCodes());
         System.out.println(equationOverload.getResults());
+
+
+        /*Set the full names of People class*/
+        Name student1 = new Name();
+        student1.setFirst("Lavhana");
+        student1.setLast("Towns");
+        System.out.println("Hi my first name is: "+ student1.getFirst());
+        System.out.println("My last name is: "+ student1.getLast());
+        student1.displayString();
+
+
+        // Student receiving overall Grades
+
+        Student Ben = new Student("Ben");
+
+        Ben.readGrades();
+
+        Ben.overallGrade();
+
+        //System.out.println("Overall Grade is : "+Ben.overallGrade());
     }
 
     // This function create takes in 3 args, and when called, you have to have 3 args, and it will set the args equal
